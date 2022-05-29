@@ -19,7 +19,7 @@ import java.util.List;
 public class UserService {
     @Test
     public void test1(){
-        UserServiceImpl userService = new UserServiceImpl();
+        //UserServiceImpl userService = new UserServiceImpl();
         //long users = userService.userCount("1", null, null);
         //System.out.println(users);
 //        GoodsTypeDaoImpl goodsTypeDao = new GoodsTypeDaoImpl();
@@ -29,10 +29,10 @@ public class UserService {
 //        GoodsService gs=new GoodsServiceImpl();
 //        Goods goods = gs.goodsById(41);
 //        System.out.println(goods);
-        OrderDaoImpl orderDao = new OrderDaoImpl();
-
-        List<Order> orders = orderDao.selectAll(0, 5);
-        System.out.println(orders);
+//        OrderDaoImpl orderDao = new OrderDaoImpl();
+//
+//        List<Order> orders = orderDao.selectAll(0, 5);
+//        System.out.println(orders);
     }
 
 }
