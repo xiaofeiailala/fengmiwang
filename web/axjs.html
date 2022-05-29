@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+<script>
+    $.ajax({
+        type:"post",
+        url:"a",
+        data:{username:"erning",password:"2663296"},
+        success:function (date){
+            console.log(typeof date)
+
+            var parse1 = JSON.parse(date);
+            console.log(parse1)
+            console.log(parse1.username)
+            $("#div1").text(parse1.username);
+        }
+    })
+</script>
+</html>
